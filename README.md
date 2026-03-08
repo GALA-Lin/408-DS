@@ -1,6 +1,6 @@
 # 数据结构课后习题编程实现
 
-[![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)  [![Language](https://img.shields.io/badge/Language-C/C++-red.svg)](https://www.cplusplus.com/) [![Status](https://img.shields.io/badge/Status-持续更新-brightgreen.svg)](https://github.com/GALA-Lin) [![408](https://img.shields.io/badge/408-数据结构-yellow.svg)](https://yz.chsi.com.cn/yzzt/kybkfm)
+[![License](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](LICENSE)  [![Language](https://img.shields.io/badge/Language-C/C++-red.svg)](https://www.cplusplus.com/) [![Status](https://img.shields.io/badge/Status-持续更新-brightgreen.svg)](https://github.com/GALA-Lin) ![408](https://img.shields.io/badge/408-数据结构-yellow.svg)
 
 ## 仓库介绍
 本仓库是针对**王道考研数据结构讲义的课后习题**编写的编程实现代码，后期加入历年真题习题实现，核心目标是：
@@ -16,6 +16,18 @@
 ### 参考资料
 - 王道论坛《2027数据结构考研复习指导》
 
+
+
+## 常见问题
+
+1. 代码运行报错？
+   - 检查编译器版本（推荐 G++），避免语法兼容问题；
+   - 确认代码中的数组大小、指针操作是否越界（已做基础防护，但可自行扩展测试）。
+2. 是否覆盖所有课后习题？
+   - 优先覆盖核心考点习题（如算法设计题），基础选择题的编程验证会选择性实现，持续更新中。
+3. 代码可以直接用于考研答题吗？
+   - 代码风格贴合考研答题规范，可在此基础上简化（如去掉调试打印、合并冗余注释）后直接使用核心代码。
+
 ## 贡献
 
 欢迎备考 408 的同学参与完善：
@@ -24,9 +36,9 @@
 2. 提交 PR：补充未实现的习题、优化注释或修复 bug；
 3. 建议反馈以及对git操作不熟悉的同学也可邮箱联系我。
 
-## Author
+## 作者
 
-**GALA_Lin**
+**GALA_Lin** 及其他贡献者
 
 - GitHub: [@GALA-Lin](https://github.com/GALA-Lin)
 - Email: [gala_lin@outlook.com](mailto:gala_lin@outlook.com)
