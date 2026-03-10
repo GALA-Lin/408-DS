@@ -12,6 +12,7 @@ typedef struct ListNode {
 } ListNode, *LinkList;
 
 struct ListNode* createNode(ElemType val);
+struct ListNode* createNode();
 void printList(struct ListNode* head);
 void freeList(LinkList &L);
 
