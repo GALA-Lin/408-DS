@@ -1,4 +1,4 @@
-#include "D:\408-DS\List_Utils\list_utils.h"
+#include "list_utils.h"
 
 // 删除链表中所有值为x的节点
 void deleteNode(LinkList &L, ElemType x) { // 等于 LinkNode* &L, 即引用传参

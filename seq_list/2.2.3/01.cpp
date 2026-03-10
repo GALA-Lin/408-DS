@@ -1,18 +1,8 @@
-#include <iostream>
+#include "seq_list_utils.h"
 /*
   删除线性表最小值，由函数返回被删除元素值
   空出位置由末尾元素补充
 */
-using namespace std;
-
-#define Element_Type int
-#define MAXSIZE 100
-
-struct Linear_List
-{
-    Element_Type data[MAXSIZE];
-    int length = 0;
-};
 
 bool deleteMin(Linear_List &L, Element_Type &deleted_value)
 {

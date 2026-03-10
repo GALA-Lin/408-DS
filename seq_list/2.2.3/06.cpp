@@ -1,16 +1,7 @@
-#include <iostream>
-using namespace std;
+#include "seq_list_utils.h"
 /*
   合并两个有序顺序表
 */
-#define Element_Type int
-#define MAXSIZE 100
-
-struct Linear_List
-{
-    Element_Type data[MAXSIZE];
-    int length = 0;
-};
 
 bool merge_sorted_List(Linear_List &L1, Linear_List &L2, Linear_List &L3)
 {

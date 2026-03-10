@@ -1,39 +1,8 @@
-#include <iostream>
-using namespace std;
+#include "seq_list_utils.h"
 /*
   有序顺序表中删除所有重复值
-*/
-#define Element_Type int
-#define MAXSIZE 100
-
-struct Linear_List
-{
-    Element_Type data[MAXSIZE];
-    int length = 0;
-};
-//(走遍历-无关有序否)
-void delete_duplicates(Linear_List &L)
-{
-    int i, j;
-    for (i = 0; i < L.length - 1; i++)
-    {
-        for (j = i + 1; j < L.length; j++)
-        {
-            if (L.data[i] == L.data[j])
-            {
-                for (int k = j; k < L.length - 1; k++)
-                {
-                    L.data[k] = L.data[k + 1];
-                }
-                L.length--;
-                j--;
-            }
-        }
-    }
-}
-
-// 有序，所以只考虑相邻元素重复否
-// 删除有序线性表中的重复元素
+  有序，所以只考虑相邻元素重复否
+*/ 
 void delete_sorted_seq_list_duplicates(Linear_List &L)
 {
     if (L.length <= 1) {
@@ -75,3 +44,25 @@ int main()
     cout << endl;
     return 0;
 }
+/*
+//(走遍历-无关有序否)
+void delete_duplicates(Linear_List &L)
+{
+    int i, j;
+    for (i = 0; i < L.length - 1; i++)
+    {
+        for (j = i + 1; j < L.length; j++)
+        {
+            if (L.data[i] == L.data[j])
+            {
+                for (int k = j; k < L.length - 1; k++)
+                {
+                    L.data[k] = L.data[k + 1];
+                }
+                L.length--;
+                j--;
+            }
+        }
+    }
+}
+*/

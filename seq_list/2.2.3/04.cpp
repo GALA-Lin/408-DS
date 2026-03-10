@@ -1,16 +1,8 @@
-#include <iostream>
-using namespace std;
+#include "seq_list_utils.h"
 /*
   删除x元素，a<=x<=b
 */
-#define Element_Type int
-#define MAXSIZE 100
 
-struct Linear_List
-{
-    Element_Type data[MAXSIZE];
-    int length = 0;
-};
 
 void delete_element(Linear_List &L, Element_Type a, Element_Type b)
 {
@@ -46,7 +38,7 @@ int main()
         cout << L.data[i] << " ";
     }
     cout << endl;
-    delete_element(L, 1, 5);
+    delete_element(L, 2, 5);
     cout << "After delete: ";
     if (L.length <=0)
     {

@@ -1,17 +1,7 @@
-#include <iostream>
+#include "seq_list_utils.h"
 /*
   逆置顺序表元素
 */
-using namespace std;
-
-#define Element_Type int
-#define MAXSIZE 100
-
-struct Linear_List
-{
-    Element_Type data[MAXSIZE];
-    int length = 0;
-};
 
 void Reverse(Linear_List &L){
     Element_Type temp;

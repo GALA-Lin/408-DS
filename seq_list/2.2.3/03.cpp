@@ -1,16 +1,7 @@
-#include <iostream>
-using namespace std;
+#include "seq_list_utils.h"
 /*
   删除所有值为X的元素
 */
-#define Element_Type int
-#define MAXSIZE 100
-
-struct Linear_List
-{
-    Element_Type data[MAXSIZE];
-    int length = 0;
-};
 
 void delete_X_optimized(Linear_List &list, Element_Type X)
 {
