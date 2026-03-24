@@ -34,6 +34,21 @@ void printList(struct ListNode* head) {
     }
     printf("NULL\n");
 }
+// 打印带头结点的链表（跳过头结点）
+void printListWithHead(struct ListNode* head) {
+    if (head == NULL) {
+        cout << "NULL" << endl;
+        return;
+    }
+    
+    ListNode *p = head->next;  // 跳过带头结点
+    while (p != NULL) {
+        cout << p->data;
+        if (p->next != NULL) cout << " -> ";
+        p = p->next;
+    }
+    cout << " -> NULL" << endl;
+}
 
 // 释放链表占用的所有内存
 void freeList(LinkList &L) {

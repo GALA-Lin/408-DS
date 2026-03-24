@@ -14,6 +14,7 @@ typedef struct ListNode {
 struct ListNode* createNode(ElemType val);
 struct ListNode* createNode();
 void printList(struct ListNode* head);
+void printListWithHead(struct ListNode* head);
 void freeList(LinkList &L);
 
 #endif // LIST_UTILS_H
